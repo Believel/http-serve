@@ -1,5 +1,5 @@
 {
-  "name": "http-serve",
+  "name": "zpp-serve",
   "version": "1.0.0",
   "description": "http-serve",
   "main": "lib/http-serve.js",
@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git@github.com:Believel/http-serve.git"
   },
-  "keywords": ["http-serve"],
+  "keywords": ["zpp-serve"],
   "author": "Believel",
   "license": "ISC",
   "devDependencies": {
