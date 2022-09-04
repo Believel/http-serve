@@ -1,23 +1,3 @@
-# packages
-
-```js
- "devDependencies": {
-    "@types/jest": "^29.0.0",
-    // Node.js 内置模块类型声明文件作为开发依赖安装
-    "@types/node": "^18.7.14",
-    "jest": "^24.9.0",
-    "ts-jest": "^24.3.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.8.2"
-  },
-  "dependencies": {
-    // CLI 需要用到的 commander
-    "commander": "^9.4.0",
-    // 用来处理静态文件请求的
-    "ecstatic": "^4.1.4"
-  }
-```
-
 # package.json 参数说明
 ```js
 {
@@ -39,8 +19,20 @@
     // 使用 Jest 可以执行所有单测。
     "test": "jest --all"
   },
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    // Node.js 内置模块类型声明文件作为开发依赖安装
+    "@types/node": "^18.7.14",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.3.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    // CLI 需要用到的 commander
+    "commander": "^9.4.0",
+    // 用来处理静态文件请求的
+    "ecstatic": "^4.1.4"
+  }
 }
 ```
-
-
-待办： 成功发布一个npm包，并使用它
