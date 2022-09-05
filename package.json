@@ -1,6 +1,6 @@
 {
   "name": "zpp-serve",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "http-serve",
   "main": "lib/http-serve.js",
   "bin": "lib/cli.js",

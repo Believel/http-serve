@@ -36,3 +36,28 @@
   }
 }
 ```
+
+# 发布包
+1. 登录npm账号：`npm login`
+2. 发布包：`npm publish`
+3. 再次发布包，需要更改包的版本号，即修改package.json中的`version`值
+4. 如果使用了发布CLI命令，那么执行命令就在bin值中，如果是对象，则运行时是 `键值 `;如果是字符串，则运行时是`包名 `,例如本项目中就是`zpp-serve -p 3000`
+
+# 发布包遇到问题
+## 1. npm login时遇到
+```js
+// 镜像文件现在是淘宝的，不被允许登录
+npm ERR! 403 403 Forbidden - PUT https://registry.npmmirror.com/-/user/org.couchdb.user:xx - [FORBIDDEN] Public registration is not allowed
+
+// 解决办法：改成 npm 镜像
+npm config set registry https://registry.npmjs.org/
+```
+
+## 2. npm publish 时遇到
+```js
+// 包名重复，换一个包名就可以了
+403 Forbidden - PUT https://registry.npmjs.org/http-serve - You do not have permission to publish "http-serve".
+
+// 解决办法：
+// 更改 package.json 中的 name 值
+```
